@@ -1,0 +1,23 @@
+<ol>
+  <li>
+    <label for="prompt">Enter your prompt:</label>
+    <input type="text" id="prompt" [(ngModel)]="prompt">
+  </li>
+  
+  <li>
+    <label for="wordCount">Word count:</label>
+    <input type="number" id="wordCount" [(ngModel)]="wordCount">
+  </li>
+
+  <li>
+    <label for="format">Format:</label>
+    <input type="text" id="format" [(ngModel)]="format">
+  </li>
+</ol>
+
+<button class="generate-button" (click)="generateEssay()">Generate</button>
+
+<div class="output-box">
+  <label for="output">Output:</label>
+  <textarea id="output" [(ngModel)]="essay"></textarea>
+</div>
